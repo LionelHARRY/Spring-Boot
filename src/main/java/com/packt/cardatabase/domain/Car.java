@@ -31,8 +31,7 @@ public class Car {
 	//Owners can have many cars
 	//LAZY is the default value for ToOne
 	@ManyToOne(fetch = FetchType.LAZY )
-	@JoinColumn(name = "owner")
-	
+	@JoinColumn(name = "owner")	
 	private Owner owner;
 
 	public Car() {
@@ -49,7 +48,9 @@ public class Car {
 		this.price = price;
 		this.owner = owner;
 	}
-
+	public long getId() {
+		return id;
+	}
 	public String getBrand() {
 		return brand;
 	}

@@ -25,7 +25,6 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
  *
  */
 @Entity
-@Table(name = "owner")
 public class Owner {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -34,7 +33,7 @@ public class Owner {
 	
 	//No need to specify FetchType.LAZY because it's default
 	//Cascading only makes sense from parent to child association
-	@OneToMany(cascade =CascadeType.ALL, mappedBy="owner")
+	@OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
 	@JsonIgnore
 	private List<Car> cars;
 	

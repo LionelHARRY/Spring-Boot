@@ -40,7 +40,8 @@ public class CardatabaseApplication {
 	CommandLineRunner runner() {
 		return args ->{
 			//Save some demo data
-			/*Owner owner1 = new Owner("Toms", "Reiver");
+			/*
+			Owner owner1 = new Owner("Toms", "Reiver");
 			Owner owner2 = new Owner("John", "Stuart");
 			Owner owner3 = new Owner("Jimmy", "Lovin");
 			orepository.save(owner1);
@@ -59,6 +60,8 @@ public class CardatabaseApplication {
 			//urepository.save(new User("user", "$2a$04$4sgjT667uoyPt68vILzLnOOIHq4ByQsM1UwHEPB3sFqcCyfFFky9.", "USER"));
 			//username: admin password: simplepw
 			//urepository.save(new User("admin", "$2a$04$R2eY6pfaurH0pt1NRcshKuAzxQjHfiKuOsmWEuuez.SawZdc.eKOu", "ADMIN"));
+			//username: lionel password: lionel
+			//urepository.save(new User("lionel", "lionel", "ADMIN"));
 		};
 	}
 
